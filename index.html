@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div><i class="fa-solid fa-bomb logo"></i></div>
+    <h1>Happy New Year !</h1>
+</body>
+<style>
+    body{
+        background-color: #222;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 80vh;
+        
+    }
+    .logo{
+        font-size: 10em;
+        color: white;
+        text-shadow: 0 0 50px #0f0,
+        0 0 100px #0f0,
+        0 0 150px #0f0,
+        0 0 200px #0f0,
+        0 0 250px #0f0;
+        animation: animate 3s linear infinite;
+
+    }
+    @keyframes animate {
+        from{
+            filter: hue-rotate(0deg);
+        }
+        to{
+            filter: hue-rotate(360deg);
+            
+        }
+    }
+    h1{
+        position: absolute;
+        top: 70%;
+        color: #0f0;
+        font-size: 45px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        background: -webkit-linear-gradient(180deg, #e66465, #9198e5);
+        animation: animate 3s linear infinite;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+
+    }
+</style>
+</html>
